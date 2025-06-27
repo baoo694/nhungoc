@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rủ bạn đi xem nhạc hội 🎵</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="music-notes">
+        <div class="note note1">♪</div>
+        <div class="note note2">♫</div>
+        <div class="note note3">♬</div>
+        <div class="note note4">♪</div>
+        <div class="note note5">♫</div>
+      </div>
+
+      <div class="card">
+        <div class="heart-container">
+          <div class="heart"></div>
+        </div>
+
+        <h1 class="title">Bạn ơi! 🎵</h1>
+        <p class="message">Tôi muốn rủ bạn đi xem nhạc hội cùng tôi!</p>
+
+        <div class="event-details">
+          <div class="detail-item">
+            <span class="icon">🎤</span>
+            <span>Nhạc hội mùa hè</span>
+          </div>
+          <div class="detail-item">
+            <span class="icon">📅</span>
+            <span>Thứ 7, 20:00</span>
+          </div>
+          <div class="detail-item">
+            <span class="icon">📍</span>
+            <span>Trung tâm văn hóa thành phố</span>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <button class="btn btn-yes" onclick="acceptInvitation()">
+            <span>Đồng ý</span>
+            <div class="btn-sparkles">
+              <span>✨</span>
+              <span>✨</span>
+              <span>✨</span>
+            </div>
+          </button>
+          <button class="btn btn-no" id="noBtn" onclick="hideNoButton()">
+            <span>Không đồng ý</span>
+          </button>
+        </div>
+
+        <div class="response-message" id="responseMessage"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
